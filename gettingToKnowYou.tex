@@ -1,6 +1,6 @@
 \documentclass{xourse}
 
-\input{preamble}
+\pdfOnly{\usepackage{techbrief}}
 
 \title{Getting to know you}
 \author{Bart Snapp}
@@ -9,9 +9,15 @@
 \begin{abstract}
 \end{abstract}
 \maketitle
+\pdfOnly{\pagestyle{titlepage}}
+
+\vspace*{1in}
 
 \part{Let's get to know each other}
 \practice{questions/interests} %% Addresses Sections III/V/VI
+\pdfOnly\newpage
+\pdfOnly{\pagestyle{main}}
+
 \practice{questions/past}%% Addresses Section II/III/VII
 \practice{questions/identity}%% Addresses Sections III/V
 \practice{questions/timeCommitments}%% Addresses Sections I
